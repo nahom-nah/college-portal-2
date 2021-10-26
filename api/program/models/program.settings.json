@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programs",
+  "info": {
+    "name": "program"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "duration": {
+      "required": true,
+      "type": "integer"
+    },
+    "modality": {
+      "type": "enumeration",
+      "enum": [
+        "online",
+        "regular",
+        "extension",
+        "distance"
+      ],
+      "required": true,
+      "default": "online"
+    },
+    "study_level": {
+      "type": "enumeration",
+      "enum": [
+        "BSC",
+        "MSC"
+      ],
+      "required": true,
+      "default": "MSC"
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "img": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_lists",
+  "info": {
+    "name": "about_list"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

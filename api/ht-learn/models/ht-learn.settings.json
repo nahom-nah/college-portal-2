@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ht_learns",
+  "info": {
+    "name": "HTLearn",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "steps": {
+      "collection": "steps"
+    },
+    "intro_vid": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

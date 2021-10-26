@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ht-applies",
+      "handler": "ht-apply.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ht-applies/count",
+      "handler": "ht-apply.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ht-applies/:id",
+      "handler": "ht-apply.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ht-applies",
+      "handler": "ht-apply.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ht-applies/:id",
+      "handler": "ht-apply.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ht-applies/:id",
+      "handler": "ht-apply.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
